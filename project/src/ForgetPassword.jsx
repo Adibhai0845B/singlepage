@@ -15,7 +15,7 @@ const ForgetPassword = () => {
     setError('');
 
     try {
-      const response = await fetch(`http://localhost:8000/api/v1/users/request-otp`, {
+      const response = await fetch(`https://vstream-jylj.onrender.com/api/v1/users/request-otp`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ const ForgetPassword = () => {
     setError('');
 
     try {
-      const response = await fetch(`http://localhost:8000/api/v1/users/verify-otp`, {
+      const response = await fetch(`https://vstream-jylj.onrender.com/api/v1/users/verify-otp`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

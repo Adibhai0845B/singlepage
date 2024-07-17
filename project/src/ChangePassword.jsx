@@ -9,7 +9,7 @@ const ChangePassword = () => {
   const handleChangePassword = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('http://localhost:8000/api/v1/users/change-password', {
+    const response = await fetch('https://vstream-jylj.onrender.com/api/v1/users/change-password', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
