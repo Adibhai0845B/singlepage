@@ -7,7 +7,6 @@ import backg from './backg.jpg';
 const MainContent = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(true);
   const navigate = useNavigate();
-  const navigat = useNavigate();
 
   const navigateToSongs = () => {
     navigate('/songs');
@@ -18,7 +17,7 @@ const MainContent = () => {
   };
 
   const video = () => {
-    navigat('./VideoMode');
+    navigate('./VideoMode');
   };
 
   return (
@@ -65,7 +64,7 @@ const MainContent = () => {
       )}
       {isSidebarOpen && <div className="w-0.5 bg-gray-400"></div>}
       <div className={`flex-grow p-10 bg-opacity-75 bg-gradient-to-r from-black via-gray-900 to-black ${isSidebarOpen ? 'ml-0' : 'ml-0'}`}>
-        <button className="py-3 text-4xl font-semibold transition duration-300 bg-black rounded-lg " onClick={toggleSidebar}>
+        <button className="py-3 text-4xl font-semibold transition duration-300 bg-black rounded-lg" onClick={toggleSidebar}>
           {isSidebarOpen ? '🟰' : '🟰'}
         </button>
         <div className="mt-6 mb-10">
@@ -77,7 +76,7 @@ const MainContent = () => {
           </div>
         </div>
         <div>
-          <h2 className="mb-6 text-3xl font-semibold ">Popular Right Now</h2>
+          <h2 className="mb-6 text-3xl font-semibold">Popular Right Now</h2>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             <VideoCard title="Kahani Meri" image="" />
             <VideoCard title="Tu Hai" image="https://th.bing.com/th/id/OIP.EXbaWRIEb3GPCUM1KTFDLAHaHa?w=177&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" duration="3:17" videoUrl="https://www.youtube.com/watch?v=example5" />
